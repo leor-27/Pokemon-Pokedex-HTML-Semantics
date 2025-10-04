@@ -7,55 +7,7 @@ body {
     background-blend-mode: lighten;
     display: flow-root;
 }
-        
-.card { 
-    border: 1px solid black; 
-    display: inline-block; 
-    padding: 20px; 
-    text-align: center; 
-    margin: 10px; 
-    background-color: white; 
-    border-radius: 8px;
-    width: 190px;        
-    height: 455px;   
-    vertical-align: top;
-    overflow: hidden;
-    font-family: 'Lato', "Helvetica Neue", Arial, sans-serif; 
-}
 
-.nav {
-    font-size: 20px;
-}
-
-img {
-    padding-bottom: 15px;
-    padding-top: 12px;
-}
-
-section {
-    display: none;
-    text-align: center;
-    margin-left: 125px;  
-}
-
-.card-container {
-    margin-right: 270px;  
-}
-
-body:not(:has(section:target)) #Normal {
-    display: block;
-}
-
-section:target {
-    display: block;
-}
-
-h2 {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 18px;
-    padding-top: 10px;
-}
-        
 header { 
     text-align: center; 
     margin-top: 75px;
@@ -66,15 +18,18 @@ header {
     font-family: 'Press Start 2P', monospace;
     text-shadow: -2px -2px 0 #003049, 2px -2px 0 #003049, -2px  2px 0 #003049, 2px 2px 0 #0b4869, 4px 4px 6px rgba(0,0,0,0.6); 
 }
-        
-h1 { 
-    font-family: 'Press Start 2P', monospace; 
-    text-decoration: none; 
-    color: #1d2ddf; 
-    padding-bottom: 8px;
-    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px  2px 0 #ffffff, 2px  2px 0 #ffffff, 4px 4px 6px rgba(0,0,0,0.6);
+
+.container { 
+    display: flex;
+    margin-left: 20px; 
+    position: relative;
+    align-items: flex-start;
 }
-        
+
+.nav {
+    font-size: 20px;
+}
+
 nav ul li a { 
     font-family: 'Press Start 2P', monospace; 
     text-decoration: none;  
@@ -93,7 +48,60 @@ nav {
 
 ul { list-style-type: none; }
 
-li { padding-bottom: 4px; }
+li { padding-bottom: 5px; }
+
+section {
+    display: none;
+    text-align: center;
+    margin-left: 125px;  
+}
+
+section:target {
+    display: block;
+}
+
+body:not(:has(section:target)) #All {
+    display: block;
+}
+
+.card-container {
+    margin-right: 270px;  
+}
+
+        
+.card { 
+    border: 1px solid black; 
+    display: inline-block; 
+    padding: 20px; 
+    text-align: center; 
+    margin: 10px; 
+    background-color: white; 
+    border-radius: 8px;
+    width: 190px;        
+    height: 455px;   
+    vertical-align: top;
+    overflow: hidden;
+    font-family: 'Lato', "Helvetica Neue", Arial, sans-serif; 
+}
+
+img {
+    padding-bottom: 15px;
+    padding-top: 12px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 18px;
+    padding-top: 10px;
+}
+        
+h1 { 
+    font-family: 'Press Start 2P', monospace; 
+    text-decoration: none; 
+    color: #1d2ddf; 
+    padding-bottom: 8px;
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px  2px 0 #ffffff, 2px  2px 0 #ffffff, 4px 4px 6px rgba(0,0,0,0.6);
+}
 
 aside {
   width: 220px;
@@ -120,14 +128,6 @@ aside {
 }
 
 a:hover { font-weight: bold; }
-
-.container { 
-    display: flex;
-    margin-left: 20px; 
-    position: relative;
-    align-items: flex-start;
-}
-
 
 .psychic-type:hover { color: rgb(226, 111, 182)} 
 
