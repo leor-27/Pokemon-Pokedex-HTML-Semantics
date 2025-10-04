@@ -1,0 +1,189 @@
+body { 
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/077/352/672/large/flyziken-twitch-bg-pokemon.jpg?1719247264"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: lighten;
+    display: flow-root;
+}
+        
+.card { 
+    border: 1px solid black; 
+    display: inline-block; 
+    padding: 20px; 
+    text-align: center; 
+    margin: 10px; 
+    background-color: white; 
+    border-radius: 8px;
+    width: 190px;        
+    height: 455px;   
+    vertical-align: top;
+    overflow: hidden;
+    font-family: 'Lato', "Helvetica Neue", Arial, sans-serif; 
+}
+
+.nav {
+    font-size: 20px;
+}
+
+img {
+    padding-bottom: 15px;
+    padding-top: 12px;
+}
+
+section {
+    display: none;
+    text-align: center;
+    margin-left: 125px;   /* space for nav */
+}
+
+.card-container {
+    margin-right: 270px;  /* space for aside */
+}
+
+body:not(:has(section:target)) #Normal {
+    display: block;
+}
+
+section:target {
+    display: block;
+}
+
+h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 18px;
+    padding-top: 10px;
+}
+        
+header { 
+    text-align: center; 
+    margin-top: 75px;
+    margin-bottom: 55px; 
+    font-size: 48px; 
+    color: #FFCC00; 
+    letter-spacing: 2px; 
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: -2px -2px 0 #003049, 2px -2px 0 #003049, -2px  2px 0 #003049, 2px 2px 0 #0b4869, 4px 4px 6px rgba(0,0,0,0.6); 
+}
+        
+h1 { 
+    font-family: 'Press Start 2P', monospace; 
+    text-decoration: none; 
+    color: #1d2ddf; 
+    padding-bottom: 8px;
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px  2px 0 #ffffff, 2px  2px 0 #ffffff, 4px 4px 6px rgba(0,0,0,0.6);
+}
+        
+nav ul li a { 
+    font-family: 'Press Start 2P', monospace; 
+    text-decoration: none;  
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px  2px 0 #ffffff, 2px  2px 0 #ffffff, 4px 4px 6px rgba(0,0,0,0.6); 
+    padding: 12px 0; 
+    letter-spacing: 3px; 
+    font-size: 14px;
+}
+
+nav {
+    position: sticky;   
+    top: 145px;           
+    left: 12px;            
+    width: 120px;          
+}
+
+ul { list-style-type: none; }
+
+li { padding-bottom: 4px; }
+
+aside {
+  width: 220px;
+  top: 0;
+  padding: 20px;
+  margin-top: -1025px;
+  font-style: italic;
+  background-color: rgba(255, 236, 179, 0.9);
+  border-radius: 8px 0 0 8px;
+  font-family: 'Lato', "Helvetica Neue", Arial, sans-serif;
+  border: 1px solid black;
+  font-weight: 400;
+  position: relative;
+  float: right; /* This keeps it on the right side on large screens */
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  aside {
+    float: none;       /* stop floating — let it become a block */
+    width: 220px;       /* full width if you want */
+    margin: 20px 0 0;  /* spacing above */
+  }
+}
+
+a:hover { font-weight: bold; }
+
+.container { 
+    display: flex;
+    margin-left: 20px; 
+    position: relative;
+    align-items: flex-start;
+}
+
+
+.psychic-type:hover { color: rgb(226, 111, 182)} 
+
+.bug-type:hover { color: rgb(124, 158, 77)}
+        
+.ghost-type:hover { color:rgb(119, 99, 159)} 
+
+.dark-type:hover { color: rgb(112, 112, 112);}
+        
+.grass-type:hover { color: rgb(165, 203, 98)} 
+
+.fire-type:hover { color:rgb(237, 132, 62)}
+        
+.poison-type:hover { color:rgb(176, 129, 197)} 
+
+.rock-type:hover { color:rgb(159, 141, 56)}
+
+.flying-type:hover { color: rgb(104, 196, 235)} 
+
+.normal-type:hover { color: rgb(188, 185, 184)}
+
+.water-type:hover { color: rgb(89, 144, 192)} 
+
+.fighting-type:hover { color:rgb(199, 109, 54)}
+
+.electric-type:hover { color:rgb(234, 214, 87)} 
+
+.fairy-type:hover { color:rgb(243, 188, 230)}
+        
+.steel-type:hover { color:rgb(163, 182, 184)} 
+
+.ice-type:hover { color:rgb(113, 193, 227)}
+
+.ground-type:hover { color:rgb(249, 223, 54)} 
+
+.dragon-type:hover { color:rgb(225, 118, 94)}
+
+.seed-category:hover { color: #4CAF50; }
+
+.poisonpin-category:hover { color: #9C27B0; }
+
+.mouse-category:hover { color: #FFEB3B; }
+
+.superpower-category:hover { color: #9E9E9E; }
+
+.fox-category:hover { color: #FF7043; }
+
+.rabbit-category:hover { color: rgb(255, 110, 214); }
+
+footer {
+    text-align: center; 
+    margin-top: 80px; 
+    margin-bottom: 22px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    font-style: italic;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);  
+    color: rgb(255, 255, 255); 
+}
